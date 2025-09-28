@@ -408,6 +408,29 @@ description: "Concise description explaining page purpose and value"
 - Use sufficient color contrast in examples and visuals
 - Structure content for easy scanning with headers and lists
 
+
+#### Accordions for collapsible content
+
+Example of accordion groups:
+
+<AccordionGroup>
+<Accordion title="Troubleshooting connection issues">
+  - **Firewall blocking**: Ensure ports 80 and 443 are open
+  - **Proxy configuration**: Set HTTP_PROXY environment variable
+  - **DNS resolution**: Try using 8.8.8.8 as DNS server
+</Accordion>
+
+<Accordion title="Advanced configuration">
+  ```javascript
+  const config = {
+    performance: { cache: true, timeout: 30000 },
+    security: { encryption: 'AES-256' }
+  };
+  ```
+</Accordion>
+</AccordionGroup>
+
+
 ## Component selection logic
 
 - Use **Steps** for procedures and sequential instructions
